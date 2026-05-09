@@ -86,7 +86,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
+# ── Custom app settings ────────────────────────────
 # Path to your fuel prices CSV
 FUEL_PRICES_CSV = BASE_DIR / 'fuel_prices.csv'
 
