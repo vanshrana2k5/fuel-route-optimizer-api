@@ -6,7 +6,7 @@ import requests
 from django.conf import settings
 
 _FUEL_STATIONS = []
-
+# Cache expires only on server restart — improves response time significantly
 def _load_fuel_stations():
     global _FUEL_STATIONS
     if _FUEL_STATIONS:
