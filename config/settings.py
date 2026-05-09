@@ -4,6 +4,9 @@ from pathlib import Path
 import os
 import os
 from pathlib import Path
+from decouple import config
+SECRET_KEY = config('SECRET_KEY', default='your-secret-key')
+DEBUG = config('DEBUG', default=True, cast=bool)
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
