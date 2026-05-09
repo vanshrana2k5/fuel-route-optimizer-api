@@ -13,6 +13,7 @@ class RouteView(APIView):
     """
 
     def post(self, request):
+        """API endpoint for fuel route optimization."""
         start = request.data.get('start', '').strip()
         end = request.data.get('end', '').strip()
 
